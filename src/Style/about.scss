@@ -1,0 +1,35 @@
+
+
+.main-about {
+    
+    width: 100vw;
+    height: 64.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+       
+        color:#000000e1;
+        font-size: 1.3rem;
+        text-indent: 1rem;
+        margin: 2rem;
+        padding: 1rem;
+        
+    }
+}
+
+.container-about {
+
+    
+    text-align: center;
+    text-indent: .5rem;
+    text-overflow: clip;
+    height:20vh;
+    width: 30vw;
+    color: rgb(99, 79, 75);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  
+}

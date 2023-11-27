@@ -1,0 +1,25 @@
+
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ffbcb3 ;
+    height: 20vh;
+    width: 100vw;
+    
+    img {
+        height: 20vh;
+        width: 10vw;
+      
+    }
+
+    .logo-footer {
+        margin: 1.5rem;
+
+    }
+
+
+}
