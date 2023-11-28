@@ -23,7 +23,7 @@
 
 main {
     display: flex;
-    background-image: url(../assets/fundo-main.jpg);
+    background-image: url(../assets/fundo-main.png);
     background-size: cover;
     background-repeat: repeat;
     height: 100vh;
@@ -82,9 +82,8 @@ main {
     .imgMinha {
         border-radius: 30%;
         height: 50vh;
-        width: 30vw;
-        padding: 2rem;
-        margin: 5rem;
+        width: 25vw;
+      
 
 
     }

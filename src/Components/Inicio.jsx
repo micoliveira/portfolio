@@ -1,10 +1,10 @@
 import React from 'react';
 import "../Style/styleMain.scss";
 import Footer from './Footer';
-import Me from "../assets/eu.jpg"
 import Calculadora from "../assets/calculadora.png";
 import Fantastika from "../assets/fantastika.png"
 import Saudavel from "../assets/saudavel.png"
+import Computador from "../assets/computador.png"
 
 
 
@@ -24,9 +24,11 @@ function Inicio() {
 
                     </p>
                     <a href='./Sobre'><button>Saiba mais aqui..</button></a>
+
                     <figure>
-                        <img src={Me} alt="Um foto minha, mulher branca  de cabelo loiro médio e olhos verdes" className='imgMinha' />
+                        <img src={Computador} alt="" className='imgMinha' />
                     </figure>
+                    
                 </section>
 
 
