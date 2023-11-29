@@ -1,7 +1,5 @@
-
-
 .main-about {
-    
+   
     width: 100vw;
     height: 64.8vh;
     display: flex;
@@ -9,27 +7,60 @@
     align-items: center;
 
     p {
-       
-        color:#000000e1;
+        
+        color: #000000e1;
         font-size: 1.3rem;
         text-indent: 1rem;
-        margin: 2rem;
+        margin: 1rem;
         padding: 1rem;
-        
+
     }
 }
 
 .container-about {
-
     
     text-align: center;
     text-indent: .5rem;
     text-overflow: clip;
-    height:20vh;
-    width: 30vw;
+    height: 10vh;
+    width: 100vw;
     color: rgb(99, 79, 75);
     font-size: 1.5rem;
-    justify-content: center;
+
+
+}
+
+.container-list {
+
+
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    text-align: justify;
+    font-size: 1.1rem;
+    justify-content: space-around;
     align-items: center;
-  
+    flex-direction: column;
+    list-style: url(../assets/ponto1.png);
+    color: rgb(99, 79, 75);
+}
+
+.container-list h4 {
+    font-size: 20px;
+    color: #686fbe;
+}
+
+.container-child-1 {
+
+
+    height: 20vh;
+    width: 20vw;
+    justify-content: flex-start;
+}
+
+.container-child-2 {
+
+    width: 20vw;
+    height: 20vh;
+
 }
