@@ -2,10 +2,13 @@ import React from 'react';
 import Footer from './Footer';
 import "../Style/reset.scss";
 import "../Style/about.scss";
+import Eu from"../assets/me.jpg";
 
 
 
 function Sobre() {
+
+  
   return (
     <>
 
@@ -14,8 +17,12 @@ function Sobre() {
           <section className='containe-dig'>
           <h2 className='type-out'>Olá, eu sou a Michele Maria</h2>
           </section>
+
+
           
         </section>
+
+        <section className='container-img'>
 
         <p>Atualmente, estou imersa no universo da trilha de desenvolvimento Front-end na renomada instituição Vai Na Web e paralelamente,
           estou trilhando meu caminho acadêmico no curso de Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul. Minha jornada não se resume apenas
@@ -27,6 +34,13 @@ function Sobre() {
           Com um grande amor pelas pessoas, meu objetivo é sempre trabalhar de forma colaborativa, compreendendo o momento único de cada indivíduo.
           Estou animada para compartilhar mais sobre meu percurso e como posso contribuir para projetos desafiadores e inspiradores vamos explorar juntos
           o potencial de uma colaboração incrível!</p>
+
+          <figure className='img-eu'>
+            <img src={Eu} alt="" />
+          </figure>
+
+          </section>
+          
 
         <section className='container-list'>
 

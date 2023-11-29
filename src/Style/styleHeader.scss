@@ -69,6 +69,29 @@ header {
     color: #ffe1dc;
    }
 
+   .button-cv {
+    
+    background-color: #eb877a;
+    border: none;
+    height: 5vh;
+    width: 8vw;
+    font-size: 1em;
+
+    
+   }
+
+   .link-cv:hover {
+     background-color: none;
+     color: white;
+     font-weight: bold;
+   }
+
+   .link-cv {
+    color: black;
+    border-radius: 20%;
+    cursor: pointer;
+   }
+
   
 }
 
