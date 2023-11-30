@@ -1,0 +1,32 @@
+
+.container-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    height: 90vh;
+    color: rgb(99, 79, 75);
+    font-size: larger;
+    
+
+}
+
+.container-filho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+   
+}
+
+.container-filho img {
+    height: 25vh;
+    width: 15vw;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.container-filho a:hover {
+    transform: scale(1.2);}
