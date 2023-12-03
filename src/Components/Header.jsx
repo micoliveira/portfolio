@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../Style/styleHeader.scss";
+import "../Style/Header/styleHeader.scss";
 import "../Style/reset.scss";
 import logoMarca from "../assets/logo2.png";
 

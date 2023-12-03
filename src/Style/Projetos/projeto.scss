@@ -1,5 +1,4 @@
-
-.container-pai{
+.container-pai {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +7,7 @@
     height: 90vh;
     color: rgb(99, 79, 75);
     font-size: larger;
-    
+
 
 }
 
@@ -18,7 +17,7 @@
     align-items: center;
     height: 60vh;
     width: 100vw;
-   
+
 }
 
 .container-filho img {
@@ -29,4 +28,21 @@
 }
 
 .container-filho a:hover {
-    transform: scale(1.2);}
+    transform: scale(1.2);
+}
+
+@media (max-width: 550px) {
+
+    .container-filho{
+    
+        flex-wrap: wrap;
+        height: 80vh;
+        width: 90vw;
+    }
+
+    .container-filho img {
+        
+        width: 30vw;
+        height: 20vh;
+    }
+}

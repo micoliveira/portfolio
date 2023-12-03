@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import "../Style/project.scss";
+import "../Style/Projetos/projeto.scss";
 import "../Style/reset.scss";
 
 import Calculadora from "../assets/calculadora.png"

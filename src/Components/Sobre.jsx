@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import "../Style/reset.scss";
-import "../Style/about.scss";
+import "../Style/Sobre/sobre.scss";
 import Eu from"../assets/me.jpg";
 
 
@@ -17,9 +17,6 @@ function Sobre() {
           <section className='containe-dig'>
           <h2 className='type-out'>Olá, eu sou a Michele Maria</h2>
           </section>
-
-
-          
         </section>
 
         <section className='container-img'>
@@ -35,11 +32,16 @@ function Sobre() {
           Estou animada para compartilhar mais sobre meu percurso e como posso contribuir para projetos desafiadores e inspiradores vamos explorar juntos
           o potencial de uma colaboração incrível!</p>
 
+          
           <figure className='img-eu'>
             <img src={Eu} alt="" />
           </figure>
 
+          
+
           </section>
+
+          
           
 
         <section className='container-list'>

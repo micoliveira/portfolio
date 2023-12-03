@@ -1,5 +1,6 @@
+
 .main-about {
-   
+
     width: 100vw;
     height: 64.8vh;
     display: flex;
@@ -7,10 +8,11 @@
     align-items: center;
 
 
+
 }
 
 .container-about {
-    
+
     text-align: center;
     text-indent: .5rem;
     text-overflow: clip;
@@ -19,7 +21,7 @@
     color: rgb(99, 79, 75);
     font-size: 1.5rem;
     flex-wrap: wrap;
-    
+
 
 }
 
@@ -59,17 +61,19 @@
     height: 20vh;
 
 }
+
 .container-img {
-    
+
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: space-around;
     height: 40vh;
 
 }
+
 .container-img p {
-    
+
     color: #000000e1;
     font-size: 1.3rem;
     text-indent: 1rem;
@@ -80,6 +84,8 @@
 .img-eu {
     height: 30vh;
     width: 15vw;
+
+
 }
 
 .img-eu img {
@@ -87,5 +93,65 @@
     border-radius: 100%;
     height: 30vh;
     width: 15vw;
+
+}
+
+.link-cv-sobre{
+    display: none;
+}
+
+@media (max-width: 550px) {
+
+
+    .main-about {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+
+    }
+
+    .container-about {
+       
+        font-size: 4px;
+        justify-content: center;
+
+    }
+
+    .container-list {
+        display: none;
+    }
+
     
+
+    .containe-dig {
+
+        height: 5vh;
+        width: 90vw;
+        
+    }
+
+    .container-img {
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .container-img img{
+        display: none;
+    }
+
+    .container-img p{
+        text-align: right;
+        flex-direction: row;
+        font-size: 17px;
+        width: 90vw;
+        margin: 3px;
+        padding: 3px;
+       
+    }
+
+
 }

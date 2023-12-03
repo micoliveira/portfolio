@@ -23,3 +23,22 @@ footer{
 
 
 }
+
+@media (max-width: 550px){
+
+    
+
+    .footer-repo{
+        height: 30vh;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer-repo img{
+        
+        height: 20vh;
+        width: 20vw;
+    }
+
+
+}

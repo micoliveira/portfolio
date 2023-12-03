@@ -13,9 +13,14 @@
 }
 
 @keyframes digitar {
-    from {width: 0;}
-    to {width: 100%;}
-    
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
 }
 
 
@@ -44,12 +49,12 @@ main {
 
     section h1 {
         text-align: center;
-        padding: 5rem;
+        padding: 1.5rem;
         color: rgb(99, 79, 75);
         font-size: 30px;
         width: 60vw;
         height: 5vh;
-    
+
     }
 
     section p {
@@ -61,29 +66,31 @@ main {
         font-size: 1.5rem;
         height: 30vh;
         width: 60vw;
+        margin: 10px;
+        padding: 5px;
     }
 
     .type-out {
         overflow: hidden;
         width: 0rem;
         white-space: nowrap;
-        border-right: .15em ;
+        border-right: .15em;
         font-size: 1.6rem;
-        animation: digitar steps(20,end) 2s forwards;
-       
+        animation: digitar steps(20, end) 2s forwards;
+
 
     }
 
-    .containe-dig{
+    .containe-dig {
         display: inline-block;
-        
+
     }
 
     .imgMinha {
         border-radius: 30%;
         height: 50vh;
         width: 25vw;
-      
+
 
 
     }
@@ -144,4 +151,69 @@ main {
 
 .projetos img:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 550px) {
+
+    main {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+
+        section {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+           
+        }
+
+        .sect-repo {
+            display: flex;
+            
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 80vh;
+        }
+
+
+        .text-repo {
+           
+            height: 50vh;
+            width: 100vw;
+            font-size: 17px;
+            margin: 10px;
+        }
+
+        .button-repo {
+            display: none;
+        }
+
+        .container-repo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 23vh;
+            width: 100vw;
+        }
+
+        .imgMinha {
+
+            height: 20vh;
+            width: 50vw;
+            margin: 50px;
+
+        }
+
+        .secao2 {
+            display: none;
+        }
+
+    }
+
+
 }
