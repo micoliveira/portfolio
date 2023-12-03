@@ -4,9 +4,11 @@ Olá, mundo! Seja bem-vindo(a) ao meu portfólio, um espaço onde compartilho mi
 
 
 Sobre Mim
+
 Eu sou a Michele, uma entusiasta da tecnologia apaixonada por criar coisas incríveis. Neste Portfólio, você encontrará informações sobre minha jornada, projetos recentes e as tecnologias que domino, ele também sofrerá constantes atualizações, até mesmo por que estamos em uma nova era aonde tudo muda constantemente.
 
  Projetos
+
 Dê uma olhada nos projetos que realizei até agora. Cada um deles é especial para mim, representando meu comprometimento e paixão pela Programação.
 
 
@@ -15,6 +17,7 @@ Redes Social Profissional
 LinkedIn (https://www.linkedin.com/in/michele-oliveira-969218122/)
 
 Responsividade
+
 Este blog foi projetado pensando na melhor experiência do usuário. Seja no seu smartphone, tablet ou computador, aproveite a navegação fluida e agradável em qualquer dispositivo.
 
 Vamos explorar juntos o mundo fascinante da tecnologia! 🌐🔗✨
