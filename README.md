@@ -18,11 +18,11 @@ LinkedIn (https://www.linkedin.com/in/michele-oliveira-969218122/)
 
 Responsividade
 
-Este blog foi projetado pensando na melhor experiência do usuário. Seja no seu smartphone, tablet ou computador, aproveite a navegação fluida e agradável em qualquer dispositivo.
+Este Portifólio foi projetado pensando na melhor experiência do usuário. Seja no seu smartphone, tablet ou computador, aproveite a navegação fluida e agradável em qualquer dispositivo.
 
 Vamos explorar juntos o mundo fascinante da tecnologia! 🌐🔗✨
 
-Este é o link do Deploy no Vercel para melhor visualição: https://portfolio-eight-xi-83.vercel.app/
+Este é o link do Deploy no Vercel para melhor visualição: https://michele-maria.vercel.app/
 
 Obrigado por visitar meu Portfólio! 🙌🚀
 
