@@ -19,8 +19,8 @@ function Inicio() {
                     <h1 className='type-out'>Olá e bem-vindo(a).</h1>
                     </div>
 
-                    <p className='text-repo'>Atualmente, estou imersa na trilha de desenvolvimento Front-end na Vai Na Web e cursando Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul. Minha experiência inclui sólidas habilidades em atendimento ao cliente, priorizando soluções proativas. Investindo em Comunicação Não Violenta e resolução de conflitos, acredito na importância dessas competências para ambientes colaborativos.
-                        Minha paixão pelo aprendizado constante abrange tanto habilidades técnicas quanto interpessoais. Com amor pelas pessoas, meu objetivo é trabalhar colaborativamente, compreendendo cada indivíduo. Estou animada para compartilhar minha jornada e contribuir para projetos desafiadores. Vamos explorar o potencial de uma colaboração incrível!
+                    <p className='text-repo'>Atualmente, estou envolvida em duas iniciativas de trabalho voluntário cruciais para meu desenvolvimento profissional e pessoal. Após concluir minha formação em desenvolvimento front-end em 2023, tornei-me voluntária na Vai na Web, desempenhando um papel essencial como colaboradora nas aulas de Soft Skills e trabalho como voluntária Front-end na DevsFree, participando de reuniões semanais para definir o escopo do projeto e desenvolver habilidades necessárias para o mercado de trabalho. A Vai na Web foi transformadora, não apenas proporcionando conhecimento técnico, mas também compartilhando a missão de diminuir a desigualdade e democratizar o acesso ao aprendizado. Além de me aprimorar em Cloud AWS, estou 
+                    trilhando meu caminho acadêmico em Análise e Desenvolvimento de Sistemas, investindo em habilidades interpessoais e técnicas. Com um profundo amor pelas pessoas, estou entusiasmada para contribuir em projetos desafiadores e inspiradores, explorando o potencial de colaborações incríveis.
 
                     </p>
                     <a className="button-repo" href='./Sobre'><button>Saiba mais aqui..</button></a>

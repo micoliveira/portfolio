@@ -18,7 +18,7 @@ function Header() {
         <img src={logoMarca} alt='Logomarca com o nome Michele' className='logo' />
       </figure>
 
-      <button className='button-cv'><a className='link-cv' href="https://drive.google.com/file/d/1RnAoa2pmJiIt77SscOUwTpeceqHmQ-IL/view?usp=sharing" target="_black" rel='external'>Download CV</a></button>
+      <button className='button-cv'><a className='link-cv' href="https://drive.google.com/file/d/1t3hBge1a-oqJHRFFR2c5UurRSQEkHcJ7/view?usp=sharing" target="_black" rel='external'>Download CV</a></button>
 
 
       <nav className='container'>
