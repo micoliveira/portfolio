@@ -13,10 +13,8 @@ import Modelo from "../assets/modelo.png"
 import ConecTEA from "../assets/projeto-ConecTEA.png"
 
 function Projetos() {
-  // Criamos uma referência para controlar o carrossel
   const carousel = useRef(null);
 
-  // Lista de Projetos (Dados organizados)
   const listaProjetos = [
     {
       id: 1,
@@ -48,13 +46,12 @@ function Projetos() {
       img: Modelo,
       link: "https://github.com/micoliveira/projeto_annabela"
     },
-     {
+    {
       id: 6,
       nome: "ConecTEA",
       img: ConecTEA,
       link: "https://github.com/micoliveira/ProjectTIPPA"
     }
-
   ];
 
   // Função para mover o carrossel para a Esquerda

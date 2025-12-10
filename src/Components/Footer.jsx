@@ -9,8 +9,6 @@ import Gmail from "../assets/gmail.svg";
 function Footer() {
   return (
     <footer className='footer-repo'>
-      
-      {/* Container superior com Ícones e Logo */}
       <div className="footer-content">
         <nav>
             <menu>
@@ -22,7 +20,6 @@ function Footer() {
         <img src={logoMarca} alt="Logotipo escrito Michele Dev entre chaves" className='logo-footer' />
       </div>
 
-      {/* Linha de Direitos Reservados */}
       <p className="copyright">
         © 2024 Michele Oliveira. Todos os direitos reservados.
       </p>

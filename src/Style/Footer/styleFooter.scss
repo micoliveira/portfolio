@@ -6,7 +6,6 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #ffbcb3;
-    // Removemos o padding lateral/inferior daqui para o copyright ocupar 100% da largura
     padding: 2rem 0 0 0; 
     width: 100%;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
@@ -16,11 +15,10 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-        // Adicionamos o padding aqui dentro para alinhar o conteúdo
+        width: 100%;  
         padding: 0 3rem 2rem 3rem; 
         
-        // Linha divisória aumentada
+       
         border-bottom: 3px solid rgba(255, 255, 255, 0.8); 
 
         nav menu {

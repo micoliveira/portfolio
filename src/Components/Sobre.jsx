@@ -23,7 +23,6 @@ function Sobre() {
                   Sou uma profissional em transição de carreira, unindo minha sólida experiência em <strong>atendimento ao cliente</strong> e <strong>logística</strong> com minha paixão por tecnologia. Minha trajetória anterior aprimorou minha capacidade de <strong>comunicação</strong>, <strong>resolução de problemas</strong> sob pressão e <strong>trabalho em equipe</strong>. Atualmente, estou focada em migrar para a área de TI, trazendo essa bagagem analítica e adaptável para novos desafios.
                 </p>
                 
-                {/* Parágrafo Corrigido */}
                 <p>
                   Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> no IFSP. Concluí o curso de <strong>Desenvolvimento Front-end com AWS</strong> pelo instituto <strong>Vai Na Web</strong> e, atualmente, estou imersa em um intensivo de <strong>Cibersegurança</strong> oferecido pela <strong>JA Brasil</strong>, preparando-me para realizar gratuitamente o exame da certificação <strong>Cisco Certified Support Technician em Segurança Cibernética (CCST)</strong>.
                 </p>
@@ -38,7 +37,7 @@ function Sobre() {
             </figure>
         </div>
 
-        {/* Seção de Habilidades (Skills) */}
+       
         <section className='skills-section'>
             
             {/* Card Soft Skills */}
