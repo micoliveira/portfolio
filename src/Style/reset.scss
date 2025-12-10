@@ -1,0 +1,22 @@
+
+
+/* src/Style/reset.scss */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Define a fonte padrão do corpo como Raleway (mais delicada que Arial) */
+    font-family: 'Raleway', sans-serif; 
+}
+
+/* Aplica a fonte elegante nos títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Negrito elegante */
+}
+
+/* Se quiser a logo (h2 no header) com a fonte diferente também */
+.logo, .logo-footer {
+    font-family: 'Playfair Display', serif;
+}

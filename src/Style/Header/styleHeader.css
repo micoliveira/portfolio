@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background-color: #ffbcb3;
+}
+header figure {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem;
+  width: 50vw;
+  height: 30vh;
+}
+header .logo {
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  height: 30vh;
+}
+header h2 {
+  text-align: start;
+  font-size: 20px;
+  color: #fffffe;
+  width: 30vw;
+  height: 20vh;
+  padding: 1.25rem;
+  margin-right: 40px;
+}
+header .container {
+  margin: 20px;
+  padding: 20px;
+}
+header a {
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fffffe;
+  width: 4vw;
+  height: 4vh;
+  text-align: center;
+}
+header a:hover {
+  background-color: #c29f99;
+  border-radius: 50%;
+  opacity: 50%;
+  color: #ffe1dc;
+}/*# sourceMappingURL=styleHeader.css.map */

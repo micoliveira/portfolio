@@ -1,0 +1,199 @@
+
+// src/Style/Sobre/sobre.scss
+
+.main-about {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../assets/fundo2.png); //  Fundo delicado
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 3rem;
+}
+
+// Animação de digitação
+@keyframes digitar {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+// 1. Título
+.intro-header {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .type-out {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        color: #8d5e5e;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #c87d72;
+        width: 0;
+        animation: digitar 3s steps(40, end) forwards;
+        display: inline-block;
+    }
+}
+
+// 2. Conteúdo (Texto + Imagem)
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center; // Alinha verticalmente ao centro
+    gap: 4rem; // Espaço entre texto e foto
+    max-width: 1200px;
+    width: 100%;
+
+    // Caixa de Texto
+    .text-container {
+        flex: 1; // Ocupa espaço disponível
+        background-color: rgba(255, 255, 255, 0.6); // Vidro fosco
+        backdrop-filter: blur(8px);
+        padding: 2.5rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #5a4a4a;
+            text-align: justify;
+            margin-bottom: 1.5rem; // Espaço entre parágrafos
+
+            strong {
+                color: #c87d72; // Destaque em rosa/terracota
+                font-weight: 700;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // Container da Foto
+    .img-container {
+        flex: 0 0 auto; // Não deixa a imagem encolher
+        position: relative;
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover; // Corta a imagem para ser um quadrado perfeito
+            border-radius: 20px; // Bordas arredondadas (ou 50% para círculo)
+            border: 5px solid #fff; // Moldura branca
+            box-shadow: 10px 10px 0px #eb877a; // Sombra sólida "estilo sticker"
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translate(-5px, -5px);
+                box-shadow: 15px 15px 0px #c87d72;
+            }
+        }
+    }
+}
+
+// 3. Seção de Skills
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .skill-box {
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2rem;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+        h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #8d5e5e;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #ffbcb3;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .tags-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap; // Permite quebrar linha
+            justify-content: center;
+            gap: 0.8rem;
+
+            li {
+                background-color: #ffe1dc; // Fundo rosa claro
+                color: #8d5e5e;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                padding: 8px 16px;
+                border-radius: 20px; // Formato de "pílula"
+                font-size: 0.95rem;
+                transition: 0.3s;
+                cursor: default;
+
+                &:hover {
+                    background-color: #c87d72;
+                    color: white;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+// Responsividade
+@media (max-width: 900px) {
+    .main-about {
+        padding: 6rem 1rem 2rem 1rem;
+    }
+
+    .intro-header .type-out {
+        font-size: 1.5rem; // Título menor no mobile
+        white-space: normal; // Permite quebrar linha se não couber
+        border: none;
+        animation: none;
+        width: auto;
+    }
+
+    .about-content {
+        flex-direction: column-reverse; // Foto em cima, texto embaixo no mobile
+        align-items: center;
+        gap: 2rem;
+
+        .text-container {
+            width: 100%;
+            padding: 1.5rem;
+            
+            p {
+                text-align: left; // Justificado fica ruim no mobile
+                font-size: 1rem;
+            }
+        }
+
+        .img-container img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .skills-section {
+        flex-direction: column; // Uma lista embaixo da outra
+        
+        .skill-box {
+            width: 100%;
+        }
+    }
+}

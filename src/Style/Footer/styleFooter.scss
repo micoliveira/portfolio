@@ -1,0 +1,107 @@
+// src/Style/Footer/styleFooter.scss
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbcb3;
+    // Removemos o padding lateral/inferior daqui para o copyright ocupar 100% da largura
+    padding: 2rem 0 0 0; 
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+
+    // Conteúdo Principal (Ícones e Logo)
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        // Adicionamos o padding aqui dentro para alinhar o conteúdo
+        padding: 0 3rem 2rem 3rem; 
+        
+        // Linha divisória aumentada
+        border-bottom: 3px solid rgba(255, 255, 255, 0.8); 
+
+        nav menu {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li a { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                    height: 55px;
+                    width: 55px;
+                    transition: all 0.3s ease;
+                    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+
+                    &:hover {
+                        transform: translateY(-8px) scale(1.1);
+                        filter: drop-shadow(0 8px 10px rgba(0,0,0,0.2));
+                    }
+                }
+            }
+        }
+
+        .logo-footer {
+            height: 75px;
+            width: auto;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: rotate(-5deg);
+            }
+        }
+    }
+
+    // Faixa de Copyright com cor diferente
+    .copyright {
+        width: 100%; // Ocupa a largura total
+        background-color: #f2b1a8; // Um tom levemente mais escuro para contrastar
+        font-family: 'Raleway', sans-serif;
+        font-size: 0.95rem;
+        color: #6b4444; // Cor do texto
+        text-align: center;
+        padding: 1.5rem; // Espaço interno da faixa
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+}
+
+// Responsividade para Celulares
+@media (max-width: 600px) {
+    footer {
+        padding-top: 2rem;
+
+        .footer-content {
+            flex-direction: column-reverse;
+            gap: 1.5rem;
+            text-align: center;
+            padding: 0 1.5rem 1.5rem 1.5rem; // Ajuste do padding mobile
+            
+            nav menu {
+                gap: 2rem;
+                a img {
+                    height: 45px;
+                    width: 45px;
+                }
+            }
+
+            .logo-footer {
+                height: 60px;
+            }
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            padding: 1rem;
+        }
+    }
+}

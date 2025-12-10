@@ -1,0 +1,198 @@
+// Animação suave para o botão
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(200, 125, 114, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(200, 125, 114, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(200, 125, 114, 0); }
+}
+
+// Animação de digitação
+@keyframes digitar {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    // Garante que o fundo cubra tudo e fique fixo ao rolar
+    background-image: url(./fundo-main.png); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    width: 100%;
+    min-height: 100vh;
+}
+
+// Seção Principal (Texto + Imagem)
+.sect-repo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem; // Espaço interno generoso
+    min-height: 90vh; // Ocupa quase toda a tela inicial
+    gap: 2rem; // Espaço entre os elementos (título, texto, botão)
+
+    .container-dig {
+        display: inline-block;
+        
+        // Estilo do Título Animado
+        .type-out {
+            font-family: 'Playfair Display', serif; // Fonte elegante
+            font-size: 2.5rem; // Tamanho grande
+            color: #8d5e5e; // Um tom terroso mais escuro para contraste
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #c87d72; // Cursor piscando
+            width: 0;
+            animation: digitar 3s steps(30, end) forwards;
+            margin: 0 auto; // Centraliza
+        }
+    }
+
+    // Texto de Apresentação
+    .text-repo {
+        font-family: 'Raleway', sans-serif; // Fonte limpa
+        font-size: 1.15rem;
+        line-height: 1.8; // Espaçamento entre linhas para leveza
+        color: #4a4a4a;
+        max-width: 800px; // Não deixa o texto ficar muito largo (cansativo)
+        text-align: center; // Centralizado ou justify, como preferir
+        background-color: rgba(255, 255, 255, 0.4); // Fundo sutil para leitura
+        padding: 2rem;
+        border-radius: 15px; // Bordas arredondadas
+        backdrop-filter: blur(5px); // Efeito de vidro fosco (moderno e delicado)
+    }
+
+    // Botão "Saiba Mais"
+    .button-repo {
+        text-decoration: none; // Remove sublinhado do link
+        
+        button {
+            background-color: #c87d72; // Cor principal
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 50px; // Formato de pílula (mais feminino)
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(200, 125, 114, 0.3); // Sombra suave
+
+            &:hover {
+                background-color: #b0655a;
+                transform: translateY(-3px); // Sobe levemente ao passar o mouse
+                box-shadow: 0 6px 20px rgba(200, 125, 114, 0.4);
+            }
+        }
+    }
+
+    // Container da Imagem Principal
+    .container-repo {
+        margin-top: 1rem;
+        
+        .imgMinha {
+            width: 100%;
+            max-width: 400px; // Tamanho máximo controlado
+            height: auto;
+            border-radius: 20px; // Bordas suaves
+            // Se quiser redonda, use border-radius: 50%;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}
+
+// Seção de Projetos em Destaque
+.secao2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.6) 100%);
+
+    h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.2rem;
+        color: #8d5e5e;
+        margin-bottom: 3rem;
+        position: relative;
+        
+        // Detalhe decorativo embaixo do título
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #c87d72;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+    }
+
+    .projetos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; // Permite quebrar linha em telas menores
+        gap: 2rem; // Espaço entre os projetos
+        width: 100%;
+        max-width: 1200px;
+
+        a {
+            display: block; // Garante que o link envolva a imagem
+            
+            img {
+                width: 280px; // Largura fixa para os cards
+                height: 180px; // Altura fixa para manter padrão
+                object-fit: cover; // Corta a imagem para caber sem distorcer
+                border-radius: 12px;
+                border: 4px solid white; // Moldura branca delicada
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1); // Sombra elegante
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-10px); // Sobe ao passar o mouse
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+                    border-color: #ffbcb3; // Muda a cor da borda
+                }
+            }
+        }
+    }
+}
+
+// Responsividade para Celulares
+@media (max-width: 768px) {
+    .sect-repo {
+        padding: 6rem 1rem 2rem 1rem; // Mais espaço no topo por causa do menu
+        
+        .container-dig .type-out {
+            font-size: 1.8rem; // Título menor no mobile
+        }
+
+        .text-repo {
+            font-size: 1rem;
+            padding: 1.5rem;
+        }
+
+        .container-repo .imgMinha {
+            max-width: 280px; // Imagem menor no mobile
+        }
+    }
+
+    .secao2 {
+        h2 {
+            font-size: 1.8rem;
+        }
+        
+        .projetos img {
+            width: 100%; // Ocupa largura total disponível
+            max-width: 300px;
+        }
+    }
+}

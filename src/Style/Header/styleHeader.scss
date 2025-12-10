@@ -1,0 +1,84 @@
+// src/Style/Header/styleHeader.scss
+
+header {
+    display: flex;
+    justify-content: space-between; // Ajustado para separar logo e navegação
+    align-items: center;
+    width: 100%; // Use % em vez de vw para evitar barra de rolagem horizontal
+    height: 15vh; // Pode manter fixo se quiser uma barra fixa, ou auto
+    background-color: #ffbcb3;
+    padding: 0 2rem; // Espaçamento lateral
+
+    figure {
+        display: flex;
+        align-items: center;
+        height: 100%; // Ocupa a altura do header
+        width: auto; // Largura automática baseada na imagem
+        margin: 0;
+    }
+
+    .logo {
+        object-fit: contain;
+        height: 100%;
+        width: auto;
+        max-width: 500px; // Aumenta o tamanho máximo da logo
+        object-fit: contain;
+    }
+
+    // Navegação
+    .container {
+        display: flex;
+        gap: 20px; // Espaço entre os links
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        padding: 10px;
+        text-decoration: none;
+        color: #fffffe;
+        font-size: 1.1rem;
+        transition: 0.3s;
+        
+        &:hover {
+            color: #c29f99;
+        }
+    }
+
+    .button-cv {
+        background-color: #eb877a;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        .link-cv {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: #c29f99;
+        }
+    }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+    header {
+        height: auto; // Altura flexível no mobile
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+
+        figure {
+            height: 10vh;
+        }
+
+        .container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
