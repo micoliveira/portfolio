@@ -24,7 +24,7 @@ function Header() {
         <Link to="/Projetos">Projetos</Link>
       </nav>
 
-         <button className='button-cv'><a className='link-cv' href="https://drive.google.com/file/d/1FetAa4GNN3RVzcbS_JOgl-T21Wbgstot/view?usp=sharing" target="_black" rel='external'>Download CV</a></button>
+         <button className='button-cv'><a className='link-cv' href="https://drive.google.com/file/d/1FetAa4GNN3RVzcbS_JOgl-T21Wbgstot/view?usp=sharing" target="_blank" rel='noopener noreferrer'>Download CV</a></button>
 
 
 
