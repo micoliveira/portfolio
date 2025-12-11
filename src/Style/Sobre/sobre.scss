@@ -1,10 +1,8 @@
 
-// src/Style/Sobre/sobre.scss
-
 .main-about {
     min-height: 100vh;
     width: 100%;
-    background-image: url(../assets/fundo2.png); //  Fundo delicado
+    background-image: url(../assets/fundo-main.png); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,7 +13,7 @@
     gap: 3rem;
 }
 
-// Animação de digitação
+
 @keyframes digitar {
     from { width: 0; }
     to { width: 100%; }
@@ -43,14 +41,14 @@
 .about-content {
     display: flex;
     justify-content: center;
-    align-items: center; // Alinha verticalmente ao centro
-    gap: 4rem; // Espaço entre texto e foto
+    align-items: center; 
+    gap: 4rem; 
     max-width: 1200px;
     width: 100%;
 
     // Caixa de Texto
     .text-container {
-        flex: 1; // Ocupa espaço disponível
+        flex: 1; 
         background-color: rgba(255, 255, 255, 0.6); // Vidro fosco
         backdrop-filter: blur(8px);
         padding: 2.5rem;
@@ -66,7 +64,7 @@
             margin-bottom: 1.5rem; // Espaço entre parágrafos
 
             strong {
-                color: #c87d72; // Destaque em rosa/terracota
+                color: #c87d72; 
                 font-weight: 700;
             }
 
@@ -78,16 +76,16 @@
 
     // Container da Foto
     .img-container {
-        flex: 0 0 auto; // Não deixa a imagem encolher
+        flex: 0 0 auto; 
         position: relative;
 
         img {
             width: 300px;
             height: 300px;
-            object-fit: cover; // Corta a imagem para ser um quadrado perfeito
-            border-radius: 20px; // Bordas arredondadas (ou 50% para círculo)
-            border: 5px solid #fff; // Moldura branca
-            box-shadow: 10px 10px 0px #eb877a; // Sombra sólida "estilo sticker"
+            object-fit: cover; 
+            border-radius: 20px; 
+            border: 5px solid #fff; 
+            box-shadow: 10px 10px 0px #eb877a; 
             transition: transform 0.3s ease;
 
             &:hover {
@@ -129,17 +127,17 @@
         .tags-list {
             list-style: none;
             display: flex;
-            flex-wrap: wrap; // Permite quebrar linha
+            flex-wrap: wrap; 
             justify-content: center;
             gap: 0.8rem;
 
             li {
-                background-color: #ffe1dc; // Fundo rosa claro
+                background-color: #ffe1dc; 
                 color: #8d5e5e;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 600;
                 padding: 8px 16px;
-                border-radius: 20px; // Formato de "pílula"
+                border-radius: 20px; 
                 font-size: 0.95rem;
                 transition: 0.3s;
                 cursor: default;
@@ -161,15 +159,15 @@
     }
 
     .intro-header .type-out {
-        font-size: 1.5rem; // Título menor no mobile
-        white-space: normal; // Permite quebrar linha se não couber
+        font-size: 1.5rem; 
+        white-space: normal; 
         border: none;
         animation: none;
         width: auto;
     }
 
     .about-content {
-        flex-direction: column-reverse; // Foto em cima, texto embaixo no mobile
+        flex-direction: column-reverse; 
         align-items: center;
         gap: 2rem;
 
@@ -178,7 +176,7 @@
             padding: 1.5rem;
             
             p {
-                text-align: left; // Justificado fica ruim no mobile
+                text-align: left; 
                 font-size: 1rem;
             }
         }
@@ -190,7 +188,7 @@
     }
 
     .skills-section {
-        flex-direction: column; // Uma lista embaixo da outra
+        flex-direction: column; 
         
         .skill-box {
             width: 100%;
